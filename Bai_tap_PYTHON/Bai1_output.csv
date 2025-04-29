@@ -1,0 +1,23 @@
+number,height,weight,name,type,ThumbnailImage
+13,3,32,weedle,"bug, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png
+14,6,100,kakuna,"bug, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png
+15,10,295,beedrill,"bug, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png
+406,2,12,budew,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png
+315,3,20,roselia,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png
+407,9,145,roserade,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png
+1,7,69,bulbasaur,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
+2,10,130,ivysaur,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png
+3,20,1000,venusaur,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png
+316,4,103,gulpin,poison,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/316.png
+317,17,800,swalot,poison,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png
+43,5,54,oddish,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png
+44,8,86,gloom,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png
+45,12,186,vileplume,"grass, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png
+543,4,53,venipede,"bug, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/543.png
+544,12,585,whirlipede,"bug, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/544.png
+545,25,2005,scolipede,"bug, poison",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png
+453,7,230,croagunk,"poison, fighting",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png
+454,13,444,toxicroak,"poison, fighting",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png
+41,8,75,zubat,"poison, flying",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png
+42,16,550,golbat,"poison, flying",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png
+169,18,750,crobat,"poison, flying",https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png
