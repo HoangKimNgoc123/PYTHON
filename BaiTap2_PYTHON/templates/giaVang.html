@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giá Vàng</title>
+    <style>
+        :root {
+            --primary: #f59e0b;
+            --secondary: #fbbf24;
+            --bg: linear-gradient(135deg, #fffbe6, #fff5cc);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg);
+            color: #92400e;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            animation: bgAnimate 10s infinite alternate;
+        }
+
+        @keyframes bgAnimate {
+            0% { background: linear-gradient(135deg, #fffbe6, #fff5cc); }
+            100% { background: linear-gradient(135deg, #fffde7, #fffbcc); }
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(to right, #fff, #fef9c3);
+            border: none;
+            border-radius: 2rem;
+            padding: 0.75rem 1.5rem;
+            margin-bottom: 2rem;
+            cursor: pointer;
+            color: #78350f;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: linear-gradient(to right, #fffbe6, #fef08a);
+            transform: translateX(-5px);
+        }
+
+        .back-btn::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .price-container {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .price-container:hover {
+            transform: scale(1.02);
+        }
+
+        .price-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0.5rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+
+        .gold-icon {
+            font-size: 4rem;
+            margin: 1rem 0;
+            color: var(--primary);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 1rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .info-text {
+            color: #5c3a0c;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
+
+        .timestamp {
+            color: #6b3d0f;
+            font-size: 0.875rem;
+            margin-top: 1.5rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        
+        <h1>Giá Vàng</h1>
+        
+        <div class="price-container">
+            <div class="gold-icon">💰</div>
+            <div class="price">{{ gold_price }}</div>
+            <br>
+            <h2>Biểu đồ giá vàng theo năm</h2>
+            <img src="{{ url_for('static', filename='gold_chart.png') }}" alt="Biểu đồ giá vàng" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 1.5rem;">
+            <br>
+            <a href="/" class="back-btn">Quay lại</a>
+        </div>
+    </div>
+</body>
+</html>
